@@ -1,13 +1,15 @@
-import {ref,computed} from 'vue'
+import {ref, computed, watchEffect} from 'vue'
+import { useStorage } from '../hooks/useStorage'
 
 function useTodos(){
+    const { list } = useStorage('todoList')
     const content = ref('')
-    const list = ref([{content:'123', done: false}])
     const addList = () => {
         list.value.push({
             content: content.value,
             done: false
         })
+        content.value = ''
     }
     const clear = () => {
         list.value = list.value.filter(item => !item.done )

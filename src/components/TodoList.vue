@@ -18,11 +18,14 @@
 <script setup>
     import { computed, ref } from 'vue'
     import useTodos from '../hooks/useTodos'
+    import { useMouse } from '../util/mouse';
+
     const count = ref(1)
     function addCount(){
         count.value++
     }
     let { content, list, addList, clear, active, all, allDone } = useTodos()
+    let { x, y } = useMouse(  )
 </script>
 <style scoped>
 li {
