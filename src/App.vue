@@ -5,8 +5,10 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello world" />
+  <router-link to="/">首页</router-link> | 
+  <router-link to="/about">关于</router-link> |
+  <router-link to="/todolist">代办列表</router-link>
+  <router-view></router-view>
 </template>
 
 <style>

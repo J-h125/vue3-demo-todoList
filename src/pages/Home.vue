@@ -1,12 +1,9 @@
 <template>
     <div>home</div>
+    <TodoList></TodoList>
 </template>
-<script>
-export default {
-    setup() {
-        
-    },
-}
+<script setup>
+import TodoList from '../components/TodoList.vue'
 </script>
 <style scoped>
 
