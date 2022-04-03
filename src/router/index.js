@@ -25,7 +25,11 @@ const routes = [
         name: 'Rate',
         component:Rate
     },
-
+    {
+        path: '/store',
+        name: 'store',
+        component:()=>import('../pages/StoreFather.vue')
+    },
 ]
 const router = createRouter({
     history: createWebHashHistory(),
