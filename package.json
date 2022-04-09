@@ -9,12 +9,17 @@
   },
   "dependencies": {
     "@vueuse/core": "^8.2.0",
+    "axios": "^0.26.1",
+    "element3": "^0.0.40",
+    "sass": "^1.50.0",
     "vue": "^3.2.31",
     "vue-router": "^4.0.13",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",
+    "eslint": "^8.13.0",
+    "eslint-plugin-vue": "^8.6.0",
     "vite": "^2.8.0"
   }
 }
